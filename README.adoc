@@ -1,0 +1,114 @@
+= Professionelle Softwareentwicklung: Pflichtabgabe 2
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+== Abgabe
+
+Die Abgabe erfolgt, indem Sie Ihre Lösung in ihr GitHub Repository pushen. Bitte überprüfen Sie über die GitHub Webseite, dass dies funktioniert hat.
+
+IMPORTANT: Die Frist für die Abgabe Freitag, der 22.5.2020 um 12:00 Uhr.
+
+=== Strukturierung von Textabgaben
+
+Sie sollten Ihre schriftlichen Ausarbeitungen, soweit verlangt, als https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc] formatieren. Die READMEs, die Sie in Ihren bisherigen Projekten finden konnten, sind auch allesamt mit AsciiDoc formatiert und daran können Sie sich orientieren. Github rendert AsciiDoc zu einer schönen Seite zusammen. AsciiDoc-Dateien erkennt man meistens an der Dateiendung `.adoc`.
+
+AsciiDoc ist eine Markup-Formatierungssprache, die in reiner Textform mit jedem Editor geschrieben werden kann. Dafür sind prinzipiell keine Tools notwendig. Sie können aber dennoch ein paar Tools / Plugins in Ihre Editoren installieren, damit Sie ein wenig farbliche / technische Unterstützung beim Schreiben erhalten können. Für viele Editoren gibt es Plugins (https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode[VS Code / VS Codium], https://marketplace.eclipse.org/content/asciidoctor-editor[für Eclipse], https://plugins.jetbrains.com/plugin/7391-asciidoc[IntelliJ], uvm.). Nutzen Sie was Ihnen am Besten gefällt.
+
+==== Videos
+
+Es gibt viele Anleitungen zur Verwendung AsciiDoc. Hier sind ein paar Ideen:
+
+* Vor ein paar Jahren hat Jens einen Screencast erstellt. Die ersten Minuten sind aufschlussreich für die generelle Verwendung von AsciiDoc. Von uns verwendet aber niemand mehr den Editor Atom, weshalb die Hinweise zu den Plugins nicht mehr so hilfreich sind: https://www.youtube.com/watch?v=w9ZE-K5XBvc. Atom wurde von vielen EntwicklerInnen durch den Editor https://code.visualstudio.com/[VS Code] oder der freien Variante https://vscodium.com/[VS Codium] abgelöst.
+* Diverse Screencasts finden sich auf Youtube. Die ersten Minuten dieses Talks geben auch einen guten Einblick: https://www.youtube.com/watch?v=MyhiD65qaUI
+
+
+=== Rechtschreibung
+
+Sie müssen sich an geltende Rechtschreibregeln halten. Sind Ihre schriftliche Abgaben nicht leserlich oder verständlich geschrieben, können wir diese Abgaben nicht als bestanden werten. Bitte achten Sie selbst also auf eine korrekte Orthographie und Grammatik.
+
+Die Abgaben dürfen entweder in _deutscher_ oder _englischer_ Sprache verfasst werden.
+
+
+== Aufgaben
+Um die Aufgaben zu lösen, sollten Sie das Arbeitsblatt von Woche 5 bearbeitet haben. 
+
+=== Aufgabe 1
+Wir wollen das Kino Beispiel um den Kinomanager erweitern, welcher einen  Spielplan für das Kino erstellt. Modellieren Sie das schon bestehende System nach (das können Sie einfach abschreiben) und erweitern Sie die Domain-Story um den Manager, der einen Spielplan erstellt. 
+
+Checken Sie Ihr graphisches Modell in das Repository ein. Nach Möglichkeit sollten Sie den Online Modeller verwenden (oder sich das Werkzeug lokal installieren) und das Modell als `.dst` Datei exportieren. Wenn Sie ein anderes Format wählen, dann ausschließlich `.png`, `.jpg` oder `.pdf`.
+
+Um Ihnen eine Vorstellung zu geben, wie die Planung funktioniert ist hier ein Interview mit dem Kinomanager Adam Hochkirch zu seinem Aufgabenbereich:
+
+----
+F: Herr Hochkirch, Sie sind Manager des Cineplace. Was sind Ihre Aufgaben?
+
+A: Zunächst mal kümmere ich mich darum, dass im Kino alles rund läuft. Das fängt bei der Finanz-, Personal- und Filmplanung an und hört damit auf, dass ich am Abend im Kino bin und prüfe, dass sich die Besucher wohl fühlen. Und manchmal stehe ich auch gerne mal an der Popcorn-Maschine. 
+
+F: Ziemlich breites Arbeitsspektrum. Erzählen Sie mir doch etwas über die Filmplanung, das klingt spannend.
+
+A: Ich bekomme am Anfang eines Monats von unserem Partner-Filmverleih eine Liste von verfügbaren Filmen mit Startdatum und wähle daraus die Filme aus, die ich gerne zeigen möchte. So plane ich dann den kommenden Monat durch und erstelle einen Plan, in dem steht wann welcher Film in welchem Kinosaal gezeigt wird.
+
+F: Das machen Sie nach Bauchgefühl? 
+
+A: Es ist schon auch ein wenig Erfahrung, aber der Filmverleih liefert uns eine Prognose für die Beliebtheit von bestimmten Filmen. Mit Hilfe der Prognose suche ich mir die beliebten Filme heraus und versuche abzuschätzen, wie sich die tatsächlichen Zahlen in unserer Stadt entwickeln können. 
+
+F: Oh, das klingt nach einem tollen Einsatzgebiet für künstliche Intelligenz!
+
+A: (lacht) Ja, aber ich glaube, ich mach das lieber von Hand auf Papier und importiere das dann in unser Verwaltungssystem. 
+
+F: Und sie planen dann einen ganzen Monat im Voraus?
+
+A: Ja, aber natürlich muss ich den Plan anpassen. Das mache ich immer am Mittwoch, da Donnerstags die neuen Filme anlaufen. Ich prüfe, ob die tatsächlichen Zahlen mit meiner Prognose übereinstimmen und bei größeren Differenzen passe ich den Plan an. Gelegentlich tausche ich dann auch mal einen Film aus. Cats ist letztes Jahr zum Beispiel derbe gefloppt und ich hab den sobald ich konnte aus dem Programm geworfen. 
+
+F: Warum nicht sofort?
+
+A: Wir gehen natürlich auch vertragliche Verpflichtungen mit unserem Verleiher ein. Einen Teil der Filme muss ich für eine Mindestzahl von Wochen leihen. Bei Cats hatte ich zum Beispiel die Vorgabe, dass der Film für drei Wochen geliehen werden musste. Darüber war ich schon etwas sauer.
+
+F: Warum das?
+
+A: Naja, mir war schon klar, dass der Film floppt, aber ich musste den trotzdem zeigen. 
+
+F: Warum haben sie den dann überhaupt geordert?
+
+A: Habe ich gar nicht. Wie gesagt, es gibt Filme, bei denen ich vertraglich verpflichtet bin sie zu zeigen. Das war so ein Film. 
+
+F: Das war spannend einmal hinter die Kulissen zu schauen. Vielen Dank Herr Hochkirch. 
+
+A: Sehr gerne. 
+----
+
+Wenn Sie auf Unklarheiten stoßen, können Sie Annahmen treffen und diese dann begründen. Hier ein Beispiel:
+
+----
+Unklar: In welchem Format wird der Plan in das Kinosystem importiert
+Annahme: Die Daten werden als Excel-Datei importiert
+Begründung: Excel ist für den Manager vermutlich vertraut und bequem. 
+----
+
+In der Praxis würden Sie solchen Unklarheiten immer mit einem Domänenexperten diskutieren um nicht am Nutzer vorbeizuentwickeln! 
+
+NOTE: Bei der Bewertung der Aufgabe werden wir darauf achten, dass Sie getroffene Annahmen begründen. 
+
+
+=== Aufgabe 2
+Nachdem Sie das Kino Beispiel erweitert haben, finden Sie Indizien für unterschiedliche Bounded Contexts. Schreiben Sie alle Indizien auf, die Sie finden können und überlegen Sie, ob eine Trennung sinnvoll ist. Schlagen Sie eine Aufteilung vor, bennennen Sie die Bounded Contexts und begründen Sie die Entscheidung. 
+
+
+
+NOTE: Es gibt hier auf jeden Fall mehr als einen Bounded Context.
+
+
+
+=== Aufgabe 3 
+Erstellen Sie eine Kontextabgrenzung für das Kino Ticketsystem und überlegen Sie sich, wie die erste Ebene der Software aussehen könnte. Trennen Sie das System sinnvoll in Komponenten auf und entwickeln Sie für jede Komponente eine Blackbox-Sicht. 
+
+Diagramme müssen als `.png`, `.jpg` oder `.pdf` Dateien abgegeben werden.

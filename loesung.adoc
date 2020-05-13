@@ -1,0 +1,49 @@
+= Professionelle Softwareentwicklung: Pflichtabgabe 2 - Lösung
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+== Aufgabe 1
+
+In welcher Datei liegt ihr Model?
+
+* Liste von getroffenen Annahmen und deren Begründung
+
+
+== Aufgabe 2
+
+Es gibt folgende Indizien: 
+
+* Die Übergabe des Tiefenplans vom Kartographen an den Hafenkapitän ist unidirektional
+* ...
+
+Eine Trennung zwischen den Schritten 1 bis 19 und 20 bis 30 halte ich für sinnvoll, weil ...
+
+Ich würde den BC, der Schritte 1 bis 19 umfasst FlooBuz und den BC zwischen 20 und 30 GlieBar nennen.
+
+== Aufgabe 3 
+
+Meine Kontextabgrenzung ist in der Datei ... 
+Die erste Ebene ist in der Datei ...
+
+Im Folgenden beschreibe ich die Komponenten Foo, Bar und Baz als Blackboxsichten 
+
+=== Foo
+
+... 
+
+=== Bar 
+
+...
+
+=== Baz
+
+...
