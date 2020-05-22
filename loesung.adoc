@@ -42,26 +42,25 @@ Es gibt folgende Indizien:
 
 
 Ich halte eine Trennung zwischen 6-12 und 4-5,13-15 sowie 1-3,16, da in 6-12 nur eine Interaktion zwischen Besucher und Kunden stattfindet sowie nur eine Verbindung zu 4-5, 13-15 über das Ticketsystem herrscht, was in der Filmplanung (4-5,13-15) keinen großen Einfluss hat. Des Weiteren findet eine zeitliche Abgrenzung statt, in der Filmplannung findet wöchentkich eine Veränderung statt und im Verkauf minütlich/stündlich statt.
-Die Trennung zwischen 4-5,13-15 und 1-3,16 ist hier sinnvoll, da in 1-3,16 nur um geschäftlche Dinge und Informationen geht und nicht mit der eigentlichen Kino wie in 4-5,13-15 geht. Des Weiteren ist hier ein sprachlicher Unterschied zwischen Manger und Partner, der Filmplan für den Manager ist was anderes als für den Partner.
 
+Die Trennung zwischen 4-5,13-15 und 1-3,16 ist hier sinnvoll, da in 1-3,16 nur um geschäftlche Dinge und Informationen geht und nicht mit der eigentlichen Kino wie in 4-5,13-15 geht. Des Weiteren ist hier ein sprachlicher Unterschied zwischen Manger und Partner, der Filmplan für den Manager ist was anderes als für den Partner.
 
 Ich würde den BC, der Schritte 6 bis 12 umfasst Verkauf, den BC zwischen 4-5,13-15 Vorstellungsplannung und 1-3,16 Filmlizensen nennen.
 
 == Aufgabe 3 
 
-Meine Kontextabgrenzung ist in der Datei ... 
-Die erste Ebene ist in der Datei ...
+Meine Kontextabgrenzung ist in der Datei 3.png
+Die erste Ebene ist in der Datei 3.png
 
-Im Folgenden beschreibe ich die Komponenten Foo, Bar und Baz als Blackboxsichten 
+Im Folgenden beschreibe ich die Komponenten Verwaltung, Einstellungen und Ticketsystem als Blackboxsichten
 
-=== Foo
+=== Verwaltung
+Speichert die Lizensen ab (Filmname, Dauer, Startdatum etc.) und gibt diese an das Ticketsystem weiter.
+Des Weiteren erstellt die Verwaltung den Filmplan nach dem Subsystem Einstellungen.
 
-... 
+=== Einstellungen
+Gibt der Verwatlungen die Einstellungen zur erstellen des Filmplans
 
-=== Bar 
 
-...
-
-=== Baz
-
-...
+=== Ticketsystem
+Das Tiketsystem ist für den Kassierer da um den Filmplan einzusehen und Reservierungen vor zu nehmen, des Weiteren bietet es eine bessere visuelle Darstellungen für Kunden an.
