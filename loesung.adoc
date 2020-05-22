@@ -15,19 +15,37 @@ endif::[]
 
 In welcher Datei liegt ihr Model?
 
-* Liste von getroffenen Annahmen und deren Begründung
+Kino_2020-05-20.dst
+
+* Unklar: Verwaltungssystem gleich Ticketsystem?
+Annahme: Verwaltungssystem ungleich Ticketsystem
+Begründung: Wahrscheinlich gibt es jeweils ein
+Ticketsystem pro Kassierer an der Kasse und ein
+Verwaltungssystem der von jedem Ticketsystem Informationen
+erhält und diese verwaltet. Das Verwaltungssystem gibt die
+Informationen an den anderen Ticketsystemen weiter.
+
 
 
 == Aufgabe 2
 
 Es gibt folgende Indizien: 
 
-* Die Übergabe des Tiefenplans vom Kartographen an den Hafenkapitän ist unidirektional
-* ...
+* Der Filmplan (1-3,16) ändert sich höchstens wöchentlich.
 
-Eine Trennung zwischen den Schritten 1 bis 19 und 20 bis 30 halte ich für sinnvoll, weil ...
+* Der Verkauf (6-12) wird im höchsten Fall minütlich durchlaufen (z.b. bei einem Blockbuster).
 
-Ich würde den BC, der Schritte 1 bis 19 umfasst FlooBuz und den BC zwischen 20 und 30 GlieBar nennen.
+* Der Filmplan (4-5,13-15) kann täglich geändert werden.
+
+* Der Filmplan (4-5,13-15) von Manager und der Filmplan zwischen Manager und Partner (1-3,16) sind unterschiedlich. Der Partner gibt den Manager "Rohdaten" und der Manager baut sich daraus ein Filmplan.
+
+
+
+Ich halte eine Trennung zwischen 6-12 und 4-5,13-15 sowie 1-3,16, da in 6-12 nur eine Interaktion zwischen Besucher und Kunden stattfindet sowie nur eine Verbindung zu 4-5, 13-15 über das Ticketsystem herrscht, was in der Filmplanung (4-5,13-15) keinen großen Einfluss hat. Des Weiteren findet eine zeitliche Abgrenzung statt, in der Filmplannung findet wöchentkich eine Veränderung statt und im Verkauf minütlich/stündlich statt.
+Die Trennung zwischen 4-5,13-15 und 1-3,16 ist hier sinnvoll, da in 1-3,16 nur um geschäftlche Dinge und Informationen geht und nicht mit der eigentlichen Kino wie in 4-5,13-15 geht. Des Weiteren ist hier ein sprachlicher Unterschied zwischen Manger und Partner, der Filmplan für den Manager ist was anderes als für den Partner.
+
+
+Ich würde den BC, der Schritte 6 bis 12 umfasst Verkauf, den BC zwischen 4-5,13-15 Vorstellungsplannung und 1-3,16 Filmlizensen nennen.
 
 == Aufgabe 3 
 
